@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('pic.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: #050505; /* Dark gray for better contrast on light backgrounds */
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for better readability */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 100px auto; /* Center the container */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.container:hover {
+    transform: scale(1.05); /* Slightly enlarge the container on hover */
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #000000; /* Black color for the heading */
+}
+
+.date, .location, .inviter {
+    font-size: 1.5em;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #000000; /* Black color for date, location, and inviter */
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #241515; /* Dark gray color for regular text */
+}
+
+a {
+    color: #007BFF; /* Blue color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue color for links on hover */
+    text-decoration: underline; /* Underline links on hover */
+}
+
+.inviter {
+    font-style: italic;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    .date, .location, .inviter {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
